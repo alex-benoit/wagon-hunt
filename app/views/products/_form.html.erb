@@ -1,7 +1,6 @@
 <%= simple_form_for @product do |f| %>
   <%= f.input :name %>
   <%= f.input :description %>
-  <%= f.input :photo %>
-  <%= f.input :photo_cache, as: :hidden %>
+  <%= f.input :photos, as: :attachinary %>
   <%= f.submit %>
 <% end %>
